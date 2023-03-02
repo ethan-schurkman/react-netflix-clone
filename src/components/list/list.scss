@@ -1,0 +1,47 @@
+.list {
+    margin-top: 30px;
+    width: 100%;
+
+    .title {
+        margin-left: 35px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .wrapper {
+        position: relative;
+        margin-top: 10px;
+
+        .sliderArrow {
+            cursor: pointer;
+            z-index: 99;
+            height: 100%;
+            width: 50px;
+            background: rgba(22, 22, 22, 0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            &.left {
+                left: 0;
+            }
+
+            &.right {
+                right: 0;
+            }
+        }
+
+        .container {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+
+            transform: translateX(0px);
+
+        }
+
+    }
+
+}
